@@ -1,3 +1,5 @@
+@import "../../styles/resources.scss";
+
 .page {
   background-color: black;
   background-image: url("../../assets/mars.jpg");
@@ -10,8 +12,8 @@
 }
 
 .title {
-  color: white;
-  font-size: 60px;
+  color: $color-white;
+  font-size: $fontSize-pageTitle;
   font-weight: bold;
   margin: 30px;
 }

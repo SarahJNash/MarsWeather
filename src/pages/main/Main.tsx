@@ -9,7 +9,7 @@ const Main = () => {
 
   return (
     <div className={styles.page}>
-      <span className={styles.title}>The weather at Elysium Planitia</span>
+      <span className={styles.title}>The Weather at Elysium Planitia</span>
       <div className={styles.content}>
         <div className={styles.weatherContainer}>
           <WeatherReport></WeatherReport>

@@ -1,21 +1,23 @@
+@import "../../../styles/resources.scss";
+
 .container {
-  color: white;
+  color: $color-white;
   display: flex;
 }
 
 .label {
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: $fontSize-normal;
   margin-right: 5px;
 }
 
 .value {
-  font-size: 20px;
+  font-size: $fontSize-small;
   font-weight: bold;
   display: flex;
   align-items: flex-start;
 }
 
 .units {
-  font-size: 10px;
+  font-size: $fontSize-small;
 }

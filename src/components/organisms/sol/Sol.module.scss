@@ -1,5 +1,7 @@
+@import "../../../styles/resources.scss";
+
 .container {
-  border: white 2px solid;
+  border: $color-white 2px solid;
   border-radius: 5px;
   background-color: black;
   display: flex;
@@ -8,18 +10,18 @@
 }
 
 .title {
-  color: white;
-  font-size: 20px;
+  color: $color-white;
+  font-size: $fontSize-large;
   font-weight: bold;
-  border-bottom: white 1px solid;
+  border-bottom: $color-white 1px solid;
   margin: 8px;
   margin-bottom: 0;
   padding-bottom: 2px;
 }
 
 .date {
-  color: white;
-  font-size: 14px;
+  color: $color-white;
+  font-size: $fontSize-normal;
   text-align: center;
 }
 

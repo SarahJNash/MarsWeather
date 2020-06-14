@@ -1,9 +1,11 @@
+@import "../../../styles/resources.scss";
+
 .container {
-  color: #95a5a6;
+  color: $color-grey;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: $fontSize-normal;
 }
 
 .text {

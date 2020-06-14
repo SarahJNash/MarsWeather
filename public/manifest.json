@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mars Weather",
+  "name": "The Weather at Elysium Planitia",
   "icons": [
     {
       "src": "favicon.ico",
