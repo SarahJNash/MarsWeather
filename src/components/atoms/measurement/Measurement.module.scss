@@ -1,0 +1,21 @@
+.container {
+  color: white;
+  display: flex;
+}
+
+.label {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+}
+
+.units {
+  font-size: 10px;
+}

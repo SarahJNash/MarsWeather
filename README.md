@@ -1,7 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Background image doesn't work very well on small screens. 
+NASA InSight: Mars Weather Service API 
+https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf 
 
+Thing to improve: 
+    The wind direction graph
+
+libraries io 
+
+axios vs fetch 
 
 ## Available Scripts
 
