@@ -17,7 +17,7 @@ const Measurement = (props: Props) => {
     <div className={classes}>
       <span className={styles.label}>{label}</span>
       <span className={styles.value}>
-        {value}
+        {value.toFixed(2)}
         <span className={styles.units}>{units}</span>{" "}
       </span>
     </div>

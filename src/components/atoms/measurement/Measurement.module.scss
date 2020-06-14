@@ -7,12 +7,12 @@
 
 .label {
   text-transform: capitalize;
-  font-size: $fontSize-normal;
+  font-size: $fontSize-small;
   margin-right: 5px;
 }
 
 .value {
-  font-size: $fontSize-small;
+  font-size: $fontSize-normal;
   font-weight: bold;
   display: flex;
   align-items: flex-start;
