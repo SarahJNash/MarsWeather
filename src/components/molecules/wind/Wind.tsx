@@ -23,7 +23,7 @@ const Wind = (props: Props) => {
           label="max"
           value={speed}
           units="mph"
-          style={styles.text}
+          styling={styles.text}
         />
       </div>
     </div>

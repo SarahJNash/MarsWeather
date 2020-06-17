@@ -18,13 +18,13 @@ const Temperature = (props: Props) => {
           label="max"
           value={tempMax}
           units="°C"
-          style={styles.text}
+          styling={styles.text}
         />
         <Measurement
           label="min"
           value={tempMin}
           units="°C"
-          style={styles.text}
+          styling={styles.text}
         />
       </div>
     </div>

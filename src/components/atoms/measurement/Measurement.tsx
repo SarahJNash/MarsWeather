@@ -6,19 +6,19 @@ type Props = {
   label: string;
   value: number;
   units: string;
-  style?: string;
+  styling?: string;
 };
 
 const Measurement = (props: Props) => {
-  const { label, value, units, style } = props;
+  const { label, value, units, styling } = props;
 
-  const classes = classNames(styles.container, style);
+  const classes = classNames(styles.container, styling);
   return (
-    <div className={classes}>
+    <div data-testid="measurement" className={classes}>
       <span className={styles.label}>{label}</span>
       <span className={styles.value}>
         {value.toFixed(2)}
-        <span className={styles.units}>{units}</span>{" "}
+        <span className={styles.units}>{units}</span>
       </span>
     </div>
   );
