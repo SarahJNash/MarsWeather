@@ -2,21 +2,36 @@ import React, { useEffect, useState } from "react";
 import styles from "./Main.module.scss";
 import WeatherReport from "../../components/organisms/weatherReport/WeatherReport";
 import { WeatherService } from "../../services/WeatherService";
-import Loading from "../../components/organisms/loading/Loading";
-import { Weather } from "../../models/Weather";
+import { Sol } from "../../models/Sol";
+import Message from "../../components/atoms/message/Message";
 
 const Main = () => {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<Weather>();
+  const [error, setError] = useState(false);
+  const [data, setData] = useState<Sol[]>();
 
   useEffect(() => {
-    WeatherService.get().then((result: Weather) => {
-      setData(result);
-      setLoading(false);
-    });
+    WeatherService.get()
+      .then((result: Sol[]) => {
+        setData(result);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+        setError(true);
+      });
   }, [setLoading]);
 
-  const content = loading ? <Loading /> : <WeatherReport data={data} />;
+  let content: JSX.Element;
+  if (loading) {
+    content = <Message message="Loading..." />;
+  } else if (error) {
+    content = (
+      <Message message="Sorry, there appears to have been a problem loading the weather" />
+    );
+  } else {
+    content = <WeatherReport data={data} />;
+  }
 
   return (
     <div className={styles.page}>

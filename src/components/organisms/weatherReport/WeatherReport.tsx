@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./WeatherReport.module.scss";
 import Sol from "../sol/Sol";
-import { Weather } from "../../../models/Weather";
+import { Sol as SolModel } from "../../../models/Sol";
 
 type Props = {
-  data?: Weather;
+  data?: SolModel[];
 };
 
 const WeatherReport = (props: Props) => {
@@ -13,10 +13,10 @@ const WeatherReport = (props: Props) => {
   if (!data) {
     return null;
   }
-
-  const sols = data.sols.map((s) => {
+  data.splice(0, 1);
+  const sols = data.map((s) => {
     return (
-      <div className={styles.solContainer}>
+      <div className={styles.solContainer} key={s.sol}>
         <Sol
           sol={s.sol}
           earthDate={new Date(s.earthDate)}
